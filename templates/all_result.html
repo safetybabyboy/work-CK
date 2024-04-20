@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Result</title>
     <style>
-        img {
-            width: 200px;
-            height: 200px; 
-            margin: 10px; 
-        }
+        
     </style>
 </head>
 <body bgcolor=#C5D6BA>
@@ -18,11 +14,11 @@
         <h1>All Results</h1>
         <table border="1">
             <tr>
-                <th>Sepal_length</th>
-                <th>Sepal_width</th>
-                <th>Petal_length</th>
-                <th>Petal_width</th>
-                <th>Prediction</th>
+                <th>ความยาวของกลีบเลี้ยง</th>
+                <th>ความกว้างของกลีบเลี้ยง</th>
+                <th>ความยาวของกลีบดอก</th>
+                <th>ความกว้างของกลีบดอก</th>
+                <th>ผลลัพท์</th>
 
             </tr>
             {% for row in rows %}
@@ -37,13 +33,8 @@
             {% endfor %}
         </table>
         <br><br>
-        <div>
-            <img src='static\iris_setosa.jpg' alt="setosa">
-            <img src='static\iris_versicolor.jpg' alt="versicolor">
-            <img src='static\iris_virginica.jpg' alt="virginica">
-        </div>
-        <br><br>
-    <a href='/'>Go back to home page</a><br>
+        
+    <a href='/'>กลับหน้าหลัก</a><br>
     </center>
 </body>
 </html>

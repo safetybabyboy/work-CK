@@ -6,11 +6,16 @@
         button {
             font-size: 24px; /* ให้ขนาดตัวอักษรเป็น 24px */
         }
+        img {
+            width: 200px;
+            height: 200px; 
+            margin: 10px; 
+        }
     </style>
     <title>HOME</title>
 </head>
 <body>
-
+    <center>
     <h1>การทำนายผลลัพท์ของพันธ์ดอกแกลดิโอลัส</h1>
 
     {% if prediction %}
@@ -32,11 +37,13 @@
         <br><br>
         <button type="submit">ผลลัพท์</button>
     </form>
+    <br><br>
     <div>
         <img src='static\iris_setosa.jpg' alt="setosa">
         <img src='static\iris_versicolor.jpg' alt="versicolor">
         <img src='static\iris_virginica.jpg' alt="virginica">
     </div>
 
+    </center>
 </body>
 </html>
